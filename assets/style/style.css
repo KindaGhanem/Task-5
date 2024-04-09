@@ -1,0 +1,871 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+/* start connection */
+.connection{
+    background-color: hsl(214.74deg 22.35% 16.67%);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+.the-mode{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.the-mode a{
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 13px;
+}
+.icon{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+.icon a{
+    color: white;
+    margin: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icon a:hover{
+    font-size: 20px;
+    color: rgb(69, 185, 69);
+}
+/* end connection  */
+/* start navbar */
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: inset 2px 2px 2px 2px rgb(15, 15, 15);
+    position: fixed;
+    top: 40px;
+    z-index: 4;
+}
+.list{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.list a{
+    color: rgb(128, 120, 120);
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.list a:hover{
+    background-color: antiquewhite;
+    color: black;
+    padding: 20px;
+}
+.shopping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopping div i{
+    font-size: 20px;
+    margin: 5px;
+}
+.shopping .cart{
+    position: relative;
+}
+.cart::after{
+    background-color: rgb(194, 194, 196);
+    border-radius: 100px;
+    width: 17px;
+    height: 17px;
+    content:"7";
+    text-align: center;
+    position: absolute;
+    left: 14px;
+}
+.shopping .profile{
+    position: relative;
+}
+.profile::after{
+    background-color: rgb(194, 194, 196);
+    border-radius: 100px;
+    width: 25px;
+    height: 20px;
+    content:"+99";
+    text-align: center;
+    position: absolute;
+    left: 14px;
+}
+.option{
+    position: relative;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    display: none;
+}
+.option .span1{
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(145, 143, 143);
+}
+.option .span2{
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(145, 143, 143);
+    top: 10px;
+}
+.option .span3{
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(145, 143, 143);
+    top: 20px;
+}
+/* end navbar */
+/* start index hero */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0deg 0% 93.73%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img-appear{
+    display: block;
+}
+.img-disappear{
+    display: none;
+}
+.title h1{
+    color: hsl(0, 5%, 71%);
+    margin: 20px;
+    text-align: start;
+    font-size: 40px;
+}
+.title h3{
+    color: hsl(0, 1%, 24%);
+    margin: 20px;
+    text-align: start;
+    font-size: 20px;
+}
+.title2{
+    display: none;
+}
+.title p {
+    margin: 20px;
+    width: 300px;
+    text-align: start;
+}
+.title2 h1{
+    color: hsl(0, 5%, 71%);
+    margin: 20px;
+    text-align: start;
+    font-size: 40px;
+}
+.title2 h3{
+    color: hsl(0, 1%, 24%);
+    margin: 20px;
+    text-align: start;
+    font-size: 20px;
+}
+.title2 p {
+    margin: 20px;
+    width: 300px;
+    text-align: start;
+}
+.icon1{
+    color: rgb(69, 185, 69);
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    left: 10px;
+}
+.icon2{
+    color: rgb(69, 185, 69);
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    right: 10px;
+}
+.under{
+    position: absolute;
+    font-size: 40px;
+    bottom: 0;
+    opacity: 0.4;
+}
+/* end index hero */
+
+/* start section categories in index and start section our service in about  */
+.categories-our-service{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.categories-our-service h1{
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    color:hsl(0, 5%, 57%);
+}
+.categories-our-service p{
+    height: 60px;
+    width: 350px;
+    text-align: center;
+}
+.cate-image{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cate-image .column{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.column img{
+    border-radius: 200px;
+    transition: .5s;
+    cursor: pointer;
+}
+.column img:hover{
+    opacity: 0.8;
+    width: 220px;
+}
+.column h3{
+    text-align: center;
+}
+.column button{
+    background-color: rgb(107, 209, 107);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.column button:focus{
+    background-color: rgb(91, 236, 23);
+    color: white;
+}
+.categories-our-service .about-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.categories-our-service .about-cards div{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 3px 3px 2px 2px rgb(141, 138, 138);
+}
+.categories-our-service .about-cards div:hover{
+    background-color:  rgb(69, 185, 69);
+}
+.categories-our-service .about-cards div:hover i{
+    color: black;
+}
+.categories-our-service .about-cards div i{
+    font-size: 50px;
+    color:  rgb(69, 185, 69);
+    margin: 20px;
+}
+.categories-our-service .about-cards div p{
+    width: 150px;
+}
+/* end section categories in index and end section our service in about */
+
+/* start section featured */
+.featured{
+    background-color: hsl(0deg 0% 93.73%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.featured h1{
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    color:hsl(0, 5%, 57%);
+}
+.featured p{
+    height: 60px;
+    width: 350px;
+    text-align: center;
+}
+.featured .cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card{
+    margin: 8px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 2px 2px 4px 4px rgb(139, 127, 127);
+    transition: .5s;
+    cursor: pointer;
+}
+.card:hover{
+    opacity: 0.8;
+}
+.card div{
+    padding: 10px;
+}
+.star{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.card .paragraph{
+    width: 250px;
+    text-align: start;
+}
+.card .review{
+    margin: 20px 0;
+    text-align: start;
+    width: 140px;
+}
+/* end section featured */
+
+/* start footer */
+.footer{
+    width: 100%;
+    background-color: hsl(214.74deg 22.35% 16.67%) ;
+}
+.first{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 0.3px solid rgb(217, 223, 217);
+}
+.zay-shop{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.zay-shop h2{
+    color: rgb(69, 185, 69);
+    margin: 20px 0 ;
+    text-align: start;
+    padding: 5px;
+    border-bottom: 0.3px solid rgb(217, 223, 217);
+}
+.footer .zay-shop a{
+    color: white;
+    text-decoration: none;
+    text-align: start;
+    padding: 5px;
+    width: 250px;
+}
+.products{
+    width: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.products h2{
+    margin: 20px 0 ;
+    text-align: start;
+    padding: 5px;
+    border-bottom: 0.3px solid rgb(217, 223, 217);
+}
+.products span{
+    padding: 5px;
+}
+.products .Gym{
+    color: rgb(69, 185, 69);
+}
+.second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.second div a{
+    color: white;
+    margin: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.second div a:hover{
+    font-size: 20px;
+    color: rgb(69, 185, 69);
+}
+.form input{
+    padding: 8px;
+    color: white;
+    background-color: transparent;
+    border:1px solid  hsl(216, 22%, 29%);
+}
+.form input:focus{
+    background-color: black;
+}
+.form button{
+    padding: 8px;
+    color: white;
+    background-color: rgb(69, 185, 69);
+    opacity: 0.5;
+    border: none;
+    position: relative;
+    left: -5px;
+    transition: .5s;
+}
+.form button:hover{
+    opacity: 1;
+}
+.copy{
+    height: 60px;
+    background-color: hsl(215, 33%, 13%);
+    color: white;
+    text-align: start;
+}
+.copy p{
+    width: 400px;
+    margin-left: 130px;
+}
+/* end footer */
+
+/* start about hero */
+.about-hero{
+    background-color: rgb(69, 185, 69); ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-hero-title h1{
+    color: white;
+    font-size: 40px;
+}
+.about-hero-title p{
+    width: 400px;
+    color: white;
+}
+/* end hero */
+
+/* start section our brand */
+.about-our-brand{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(230, 226, 226);
+}
+.about-brand-image {
+    margin-top: 20px;
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.about-our-brand h1{
+    font-size: 30px;
+    height: 60px;
+    margin-top: 20px;
+    color:hsl(0, 2%, 40%);
+}
+.about-our-brand p{
+    height: 60px;
+    width: 350px;
+    text-align: center;
+}
+.about-brand-image img{
+    transition: 0.3s;
+    filter: grayscale(100%); 
+}
+.about-brand-image img:hover{
+    filter: grayscale(0); 
+}
+.about-brand-image i{
+    color: rgb(104, 102, 102);
+    font-size: 40px;
+    opacity: 0.3;
+}
+.about-brand-image i:hover{
+    color:  rgb(36, 201, 36);
+}
+/* end section our brand */
+
+/* start contact hero */
+.contact-hero{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0deg 0% 93.73%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-hero h1{
+    font-size: 35px;
+    margin: 10px;
+    color:hsl(0, 5%, 48%);
+}
+.contact-hero p{
+    width: 450px;
+    text-align: center;
+}
+/* end contact hero */
+
+/* start contact main */
+
+/* start map */
+.contact-map iframe{
+    width: 100%;
+}
+.contact-map{
+    position: relative;
+}
+.contact-map::after{
+    content: "Zay eCommerce Template Location";
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 40%;
+    border-radius: 50px;
+    padding: 10px;
+}
+/* end map */
+/* start contact form */
+.contact-form{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-form label{
+    margin-left: 10px;
+}
+.contact-form input:focus{
+    background-color: rgb(69, 185, 69);
+}
+.contact-form textarea:focus{
+    background-color: rgb(69, 185, 69);
+}
+.contact-form-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-form-one div{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-one div input{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+}
+.contact-form-two{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-two input{
+    width: 610px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+.contact-form-two textarea{
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+.contact-form button{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    border: none;
+    margin-left: 510px;
+    opacity: 0.5;
+    transition: .7s;
+}
+/* .contact-form button:focus{
+    opacity: 1;
+} */
+.contact-form button:hover{
+    opacity: 1;
+}
+/* end contact form */
+/* start index hero */
+/* start the responsive */
+@media (min-width:450px) and (max-width:750px){
+    .connection{
+        display: none;
+    }
+    .navbar{
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list{
+        display: none;
+    }
+    .shopping{
+        display: none;
+    }
+    .option{
+        display: block;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img-appear{
+        display: none;
+    }
+    .img-disappear{
+        display: block;
+        margin-top: 80px;
+    }
+    .copy p{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .copy p{
+        width: 70%;
+    } 
+    .about-hero-title{
+        margin-top: 70px;
+    }
+    .about-hero-title p{
+        width: 250px;
+        margin: 10px;
+    }
+    .about-hero-title h1{
+        margin-top: 10px;
+    }
+    .about-hero img{
+        width: 250px;
+    }
+    .about-brand-image{
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .about-brand-image img{
+        width: 80px;
+        margin: 5px;
+    }
+    .contact-hero p{
+        width: 300px;
+    }
+    .contact-form-one div input{
+        width: 400px
+    }
+    .contact-form-two input{
+        width: 400px;
+     }
+     .contact-form button{
+        margin-left: 320px;
+     }
+     .contact-map::after{
+        left: 30%;
+    }
+}
+@media (min-width:300px) and (max-width:449px){
+    .connection{
+        display: none;
+    }
+    .navbar{
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list{
+        display: none;
+    }
+    .shopping{
+        display: none;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .option{
+        display: block;
+    }
+    .icon1,
+    .icon2{
+        font-size: 30px;
+    }
+    .under {
+        font-size: 20px;
+        bottom: 0;
+    }
+    .title2 h1 ,
+    .title2 h2 {
+        width: 280px;
+    }
+    .title2 p{
+        padding-bottom: 40px;
+        font-size: 15px;
+        width: 280px;
+    }
+    .title{
+        display: none;
+    }
+    .title2{
+        display: block;
+        margin-bottom: 70px;
+    }
+    .img-appear{
+        display: none;
+    }
+    .img-disappear{
+        display: block;
+        margin-top: 190px;
+    }
+    .footer .zay-shop a{
+        font-size: 10px;
+    }
+    .zay-shop{
+        width: 100%;
+     }
+    .copy p{
+        margin-left: 5px;
+        font-size: 15px;
+        width: 70%;
+    }
+    .categories-our-service h1{
+        margin-bottom: 10px;
+        width: 280px;
+        text-align: center;
+    }
+    .categories-our-service p{
+        margin-bottom: 25px;
+        width: 280px;
+        text-align: center;
+    }
+    .featured h1{
+        width: 290px;
+        text-align: center;
+    }
+    .featured p{
+        width: 250px;
+        text-align: start;
+    }
+    .card{
+        width: 250px;
+    }
+    .card .paragraph{
+        width: 200px;
+    }
+    .card .review{
+        width: 150px;
+        padding-top: 15px;
+        text-align: start;
+    }
+    .card img{
+        width: 250px;
+    }
+    .form{
+        margin-top: 10px;
+    }
+    .about-hero-title h1{
+        margin-top: 90px;
+        font-size: 30px;
+    }
+    .about-hero-title p{
+        width: 250px;
+        margin: 10px;
+    }
+    .about-hero img{
+        width: 250px;
+    }
+    .about-cards div{
+        margin: 40px;
+    }
+    .about-brand-image{
+        padding: 10px;
+        margin: 60px auto;
+    }
+    .about-brand-image img{
+        width: 60px;
+        margin: 5px;
+    }
+    .about-brand-image i{
+        font-size: 25px;
+    }
+    .about-our-brand p{
+        width: 300px;
+    }
+    .products{
+        width: 100%;
+    }
+    .contact-hero p{
+        width: 300px;
+     }
+    .contact-form-one div input ,
+    .contact-form-two input {
+        width: 325px;
+    }
+     .contact-form button{
+        margin-left: 270px;
+     }
+     .footer .zay-shop a{
+        font-size: 15px;
+    }
+    .contact-map::after{
+        left: 20%;
+    }
+}
